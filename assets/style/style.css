@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 4px;
+    background: -webkit-linear-gradient(#c7b198,#dfd3c3,#f0ece2);
+}
+
+h1,h2,h4 {
+    color: #596e79;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-evenly
+}
+
+nav a {
+    text-decoration: none;
+    color: #596e79;
+    padding: 16px;
+    text-align: center;
+}
+
+
+.link-container {
+    border: 2px solid #596e79;
+    width: 130px;
+    border-radius: 15px;
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    padding-bottom: 80px;
+}
+
+#intro h1 {
+    font-size: 80px;
+    margin-top: 30px;
+}
+
+#my-work {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px 0 20px;
+}
+
+h2 {
+    font-size: 40px;
+    margin: 0px 0px 20px 30px;
+}
+
+.horiseon, .countdown-clock {
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.horiseon-img{
+    background-image: url(../images/horiseon-bkgrnd.jpg);
+    background-size: cover;
+}
+
+.countdown-clock-img {
+    background-image: url();
+    background-size: cover;
+}
+
+.container-one {
+    display: flex;
+    border: 2px solid #596e79;
+    border-radius: 20px;
+    width: 40%;
+    height: 200px
+}
+
+#my-work h3 {
+    display: flex;
+    color: rgb(164, 148, 135);
+    font-size: 25px;
+    text-decoration: none;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.password, .tappy-bird {
+    float: right;
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.container-two {
+    display: flex;
+    border: 2px solid #596e79;
+    border-radius: 20px;
+    width: 55%;
+    height: 200px
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.container-one .container-two::hover {
+    
+}
