@@ -10,3 +10,6 @@ This project forced me to do research. When I began I was a bit lost, but I prob
 
 <img src="./assets/images/screenshot.png">
 
+## Disclaimer
+
+3 of these projects are simply placeholders. I haven't created anyhting yet since I am quite new.
