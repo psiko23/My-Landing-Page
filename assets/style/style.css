@@ -267,7 +267,7 @@ footer h3 {
     }    
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     
     nav {
         float: right;
