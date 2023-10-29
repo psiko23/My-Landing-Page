@@ -18,6 +18,7 @@ h1,h2,h3,h4 {
 }
 
 nav {
+    margin-top: 20px;
     display: flex;
     justify-content: space-evenly
 }
@@ -27,6 +28,10 @@ nav a {
     color: #596e79;
     padding: 16px;
     text-align: center;
+}
+
+nav a:hover {
+    color: #f0ece2;
 }
 
 
@@ -41,14 +46,21 @@ nav a {
     transition: all 0.3s ease-in-out;
 }
 
-.link-container::selection {
-    color: white;
+#intro {
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-#intro {
-    display: flex;
-    margin-left: 10%;
-    padding-bottom: 80px;
+#pfp {
+    background-image: url(../images/pfp.jpg);
+    background-position: center;
+    background-size: cover;
+    border: solid #c7b198 4px;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: 45px;
 }
 
 #intro h1 {
@@ -64,12 +76,16 @@ nav a {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 #about-me h3 {
     text-align: center;
+    margin: 10px;
+}
+
+.hello {
     font-size: 26px;
-    margin-left: 10px;
 }
 
 #bio {
@@ -79,14 +95,20 @@ nav a {
     font-size: 20px;
     padding: 4px;
     text-align: center;
-    margin-right: 0;
-    margin-left: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: #596e79;
 }
 
+#about-me a {
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+    color: #596e79;
+    font-size: 19px;
+    font-weight: bold;
+}
 
 #my-work {
     display: flex;
@@ -179,8 +201,58 @@ h2 {
     transition: all 0.5s ease-in-out;
 }
 
+#contact-me {
+    border-top: solid 8px #c7b198;
+    border-bottom: solid 4px #dfd3c3;
+}
+
+footer h3 {
+    text-align: center;
+    margin: 15px;
+}
+
+#social {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+
+.logo {
+    width: 75px;
+    height: 75px;
+}
+
+#instagram {
+    background-image: url(../images/insta-logo.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#spotify {
+    background-image: url(../images/spotify-logo.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#linkedin {
+    background-image: url(../images/LinkedIn_icon.svg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
 @media screen and (max-width: 1024px) {
     
+    #bio {
+        font-size: 18px;
+    }
+
+    .hello {
+        margin: 0;
+    }
+
     .row {
         display: inline-block;
     }
@@ -195,7 +267,7 @@ h2 {
     }    
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 414px) {
     
     nav {
         float: right;
@@ -205,15 +277,34 @@ h2 {
     }
 
     nav a{
-        margin: 6px 0 6px 0;
+        margin: 6px 4px 6px 0;
     }
     
     #intro {
-        margin-left: 0
+        display: flex;
+        flex-direction: column;
     }
     
     #intro h1 {
         font-size: 40px;
+    }
+
+    #about-me {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border-radius: 15px;
+    }
+
+    #about-me h3 {
+        margin: 0;
+    }
+
+    #bio {
+        font-size: 18px;
+        margin: 0;
     }
 
     #my-work h2 {
